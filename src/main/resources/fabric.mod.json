@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "hyperionmod",
+	"version": "${version}",
+	"name": "Hyperioned",
+	"description": "This is a mod that bring a new planet to minecraft. If you are playing this mod, you're going to space! There are new mobs, bosses, and a new ore!",
+	"authors": [
+		"Aberplex"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/hyperionmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.aredd.hyperionmod.HyperionMod"
+		],
+		"client": [
+			"net.aredd.hyperionmod.HyperionModClient"
+		],
+		"fabric-datagen": [
+			"net.aredd.hyperionmod.HyperionModDataGenerator"
+		]
+	},
+	"mixins": [
+		"hyperionmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.0",
+		"minecraft": "~1.20.2",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
