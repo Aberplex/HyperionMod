@@ -1,3 +1,5 @@
 {
-  "item.hyperionmod.hyperionite": "Hyperionite"
+  "item.hyperionmod.hyperionite": "Hyperionite",
+  "block.hyperionmod.hyper_stone": "Hyperstone",
+  "itemgroup.hyperionite": "Hyperion Group"
 }

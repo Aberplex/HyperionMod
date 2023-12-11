@@ -23,9 +23,8 @@ public class ModItems {
     }
 
     public static void registerModItems() {
-        HyperionMod.LOGGER .info("Registering Mod items for " + HyperionMod.MOD_ID);
+        HyperionMod.LOGGER.info("Registering Mod items for " + HyperionMod.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemstoIngredientItemGroup);
     }
 }
-//we

@@ -1,5 +1,7 @@
 package net.aredd.hyperionmod;
 
+import net.aredd.hyperionmod.block.ModBlocks;
+import net.aredd.hyperionmod.item.ModItemGroups;
 import net.aredd.hyperionmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -13,6 +15,9 @@ public class HyperionMod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 
+		ModItemGroups.registerItemGroups();
+
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }

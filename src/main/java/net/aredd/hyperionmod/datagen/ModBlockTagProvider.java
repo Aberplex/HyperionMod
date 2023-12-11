@@ -2,6 +2,8 @@ package net.aredd.hyperionmod.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
+import net.aredd.hyperionmod.block.ModBlocks;
+import net.aredd.hyperionmod.util.ModTags;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
@@ -17,12 +19,15 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup arg) {
+        getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
+                .add(ModBlocks.HYPER_STONE)
+                .add(ModBlocks.HYPER_ORE);
 
-        getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE);
+        getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
+                .add(ModBlocks.HYPER_STONE);
 
-        getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL);
-
-        getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, new Identifier("fabric","needs_tool_level_4")));
-        //Add Blocks here
+        getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, new Identifier("fabric","needs_tool_level_4")))
+                .add(ModBlocks.HYPER_ORE);
     }
 }
+
