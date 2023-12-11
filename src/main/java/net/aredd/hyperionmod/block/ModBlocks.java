@@ -22,7 +22,7 @@ public class ModBlocks {
     public static final Block HYPER_STONE = registerBlock("hyper_stone",
             new Block(FabricBlockSettings.copyOf(Blocks.END_STONE).mapColor(MapColor.PALE_PURPLE)));
     public static final Block HYPER_ORE = registerBlock("hyper_ore",
-            new Block(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE).mapColor(MapColor.PURPLE)));
+            new Block(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE).mapColor(MapColor.PURPLE).strength(35.0f, 2000.0f)));
 
     private static Block registerBlock(String name, Block block)  {
         registerBlockItem(name, block);

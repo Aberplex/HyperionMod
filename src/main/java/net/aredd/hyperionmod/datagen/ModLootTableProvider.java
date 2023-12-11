@@ -25,7 +25,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
     @Override
     public void generate() {
         addDrop(ModBlocks.HYPER_STONE);
-        addDrop(ModBlocks.HYPER_ORE, HyperioniteOreDrops(ModBlocks.HYPER_ORE, ModItems.HYPERIONITE));
+        addDrop(ModBlocks.HYPER_ORE, HyperioniteOreDrops(ModBlocks.HYPER_ORE, ModItems.RAW_HYPERIONITE));
     }
 
     public LootTable.Builder HyperioniteOreDrops(Block drop, Item item) {

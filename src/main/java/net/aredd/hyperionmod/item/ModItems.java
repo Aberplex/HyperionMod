@@ -11,10 +11,10 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class ModItems {
-    public static final Item HYPERIONITE = registerItem("hyperionite", new Item(new FabricItemSettings()));
+    public static final Item RAW_HYPERIONITE = registerItem("raw_hyperionite", new Item(new FabricItemSettings()));
 
     private static void addItemstoIngredientItemGroup(FabricItemGroupEntries entries) {
-        entries.add(HYPERIONITE);
+        entries.add(RAW_HYPERIONITE);
     }
 
 
