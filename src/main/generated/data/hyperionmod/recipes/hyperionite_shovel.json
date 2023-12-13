@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "h": {
+      "item": "hyperionmod:hyperionite_ingot"
+    },
+    "s": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "h",
+    "s",
+    "s"
+  ],
+  "result": {
+    "item": "hyperionmod:hyperionite_shovel"
+  },
+  "show_notification": true
+}

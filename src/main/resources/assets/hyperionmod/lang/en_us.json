@@ -1,8 +1,20 @@
 {
   "item.hyperionmod.raw_hyperionite": "Raw Hyperionite",
+  "item.hyperionmod.hyperionite_ingot": "Hyperionite Ingot",
 
   "block.hyperionmod.hyper_stone": "Hyperstone",
   "block.hyperionmod.hyper_ore": "Hyperionite Ore",
 
-  "itemgroup.hyperionite": "Hyperion Group"
+  "itemgroup.hyperionite": "Hyperion Group",
+
+  "item.hyperionmod.hyperionite_sword": "Hyperionite Sword",
+  "item.hyperionmod.hyperionite_pickaxe": "Hyperionite Pickaxe",
+  "item.hyperionmod.hyperionite_axe": "Hyperionite Axe",
+  "item.hyperionmod.hyperionite_shovel": "Hyperionite Shovel",
+  "item.hyperionmod.hyperionite_hoe": "Hyperionite Hoe",
+
+  "item.hyperionmod.hyperionite_helmet": "Hyperionite Helmet",
+  "item.hyperionmod.hyperionite_chestplate": "Hyperionite Chestplate",
+  "item.hyperionmod.hyperionite_leggings": "Hyperionite Leggings",
+  "item.hyperionmod.hyperionite_boots": "Hyperionite Boots"
 }

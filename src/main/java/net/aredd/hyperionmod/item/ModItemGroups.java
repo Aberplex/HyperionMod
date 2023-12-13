@@ -15,8 +15,22 @@ public class ModItemGroups {
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.hyperionite"))
                     .icon(() -> new ItemStack(ModItems.RAW_HYPERIONITE)).entries((displayContext, entries) -> {
                         entries.add(ModItems.RAW_HYPERIONITE);
+                        entries.add(ModItems.HYPERIONITE_INGOT);
+
+                        entries.add(ModItems.HYPERIONITE_SWORD);
+                        entries.add(ModItems.HYPERIONITE_PICKAXE);
+                        entries.add(ModItems.HYPERIONITE_SHOVEL);
+                        entries.add(ModItems.HYPERIONITE_AXE);
+                        entries.add(ModItems.HYPERIONITE_HOE);
+
+                        entries.add(ModItems.HYPERIONITE_HELMET);
+                        entries.add(ModItems.HYPERIONITE_CHESTPLATE);
+                        entries.add(ModItems.HYPERIONITE_LEGGINGS);
+                        entries.add(ModItems.HYPERIONITE_BOOTS);
+
                         entries.add(ModBlocks.HYPER_STONE);
                         entries.add(ModBlocks.HYPER_ORE);
+
                     }).build());
 
 

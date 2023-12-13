@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "h": {
+      "item": "hyperionmod:hyperionite_ingot"
+    }
+  },
+  "pattern": [
+    "hhh",
+    "h h",
+    "h h"
+  ],
+  "result": {
+    "item": "hyperionmod:hyperionite_leggings"
+  },
+  "show_notification": true
+}

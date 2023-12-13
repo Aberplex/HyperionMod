@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "h": {
+      "item": "hyperionmod:hyperionite_ingot"
+    },
+    "s": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " hh",
+    " s ",
+    " s "
+  ],
+  "result": {
+    "item": "hyperionmod:hyperionite_hoe"
+  },
+  "show_notification": true
+}

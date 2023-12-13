@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_hyper_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "hyperionmod:hyper_ore"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:hyperionite_ingot_from_blasting_hyper_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_hyper_ore"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:hyperionite_ingot_from_blasting_hyper_ore"
+    ]
+  },
+  "sends_telemetry_event": false
+}

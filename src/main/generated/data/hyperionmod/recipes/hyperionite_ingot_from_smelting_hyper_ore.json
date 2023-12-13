@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 220,
+  "experience": 2.0,
+  "group": "hyperionite",
+  "ingredient": {
+    "item": "hyperionmod:hyper_ore"
+  },
+  "result": "hyperionmod:hyperionite_ingot"
+}
