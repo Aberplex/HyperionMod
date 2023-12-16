@@ -1,6 +1,7 @@
 package net.aredd.hyperionmod.datagen;
 
 import net.aredd.hyperionmod.block.ModBlocks;
+import net.aredd.hyperionmod.block.custom.HyperCropBlock;
 import net.aredd.hyperionmod.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
@@ -18,12 +19,15 @@ public class    ModModelProvider extends FabricModelProvider {
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.HYPER_STONE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.HYPER_ORE);
+        blockStateModelGenerator.registerCrop(ModBlocks.HYPER_BERRY_BUSH, HyperCropBlock.AGE, 0, 1);
     }
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.RAW_HYPERIONITE, Models.GENERATED);
         itemModelGenerator.register(ModItems.HYPERIONITE_INGOT, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.HYPER_BERRY, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.HYPERIONITE_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ModItems.HYPERIONITE_PICKAXE, Models.HANDHELD);

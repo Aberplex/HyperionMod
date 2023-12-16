@@ -2,8 +2,11 @@
   "item.hyperionmod.raw_hyperionite": "Raw Hyperionite",
   "item.hyperionmod.hyperionite_ingot": "Hyperionite Ingot",
 
+  "item.hyperionmod.hyper_berry": "Hyper Berry",
+
   "block.hyperionmod.hyper_stone": "Hyperstone",
   "block.hyperionmod.hyper_ore": "Hyperionite Ore",
+  "block.hyperionmod.hyper_berry_bush": "Hyper Berry Bush",
 
   "itemgroup.hyperionite": "Hyperion Group",
 

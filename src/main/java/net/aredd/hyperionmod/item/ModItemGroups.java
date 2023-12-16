@@ -13,7 +13,7 @@ import net.minecraft.util.Identifier;
 public class ModItemGroups {
     public static final ItemGroup HYPER_GROUP = Registry.register(Registries.ITEM_GROUP, new Identifier(HyperionMod.MOD_ID, "hyperionite"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.hyperionite"))
-                    .icon(() -> new ItemStack(ModItems.RAW_HYPERIONITE)).entries((displayContext, entries) -> {
+                    .icon(() -> new ItemStack(ModItems.HYPERIONITE_INGOT)).entries((displayContext, entries) -> {
                         entries.add(ModItems.RAW_HYPERIONITE);
                         entries.add(ModItems.HYPERIONITE_INGOT);
 
@@ -30,6 +30,8 @@ public class ModItemGroups {
 
                         entries.add(ModBlocks.HYPER_STONE);
                         entries.add(ModBlocks.HYPER_ORE);
+
+                        entries.add(ModItems.HYPER_BERRY);
 
                     }).build());
 

@@ -1,6 +1,7 @@
 package net.aredd.hyperionmod.item;
 
 import net.aredd.hyperionmod.HyperionMod;
+import net.aredd.hyperionmod.block.ModBlocks;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -12,6 +13,9 @@ import net.minecraft.util.Identifier;
 public class ModItems {
     public static final Item RAW_HYPERIONITE = registerItem("raw_hyperionite", new Item(new FabricItemSettings()));
     public static final Item HYPERIONITE_INGOT = registerItem("hyperionite_ingot", new Item(new FabricItemSettings()));
+
+    public static final Item HYPER_BERRY = registerItem("hyper_berry",
+            new AliasedBlockItem(ModBlocks.HYPER_BERRY_BUSH, new FabricItemSettings().food(ModFoodComponents.HYPER_BERRY)));
 
     public static final Item HYPERIONITE_SWORD = registerItem("hyperionite_sword",
             new SwordItem(ModToolMaterial.HYPERION_TOOLS, 11, -2.4f, new FabricItemSettings()));
@@ -50,6 +54,9 @@ public class ModItems {
         entries.add(HYPERIONITE_PICKAXE);
         entries.add(HYPERIONITE_HOE);
     }
+    private static void addItemstoFoodItemGroup(FabricItemGroupEntries entries) {
+        entries.add(HYPER_BERRY);
+    }
 
 
     private static Item registerItem(String name, Item item) {
@@ -62,5 +69,6 @@ public class ModItems {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemstoIngredientItemGroup);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(ModItems::addItemstoCombatItemGroup);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(ModItems::addItemstoToolItemGroup);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(ModItems::addItemstoFoodItemGroup);
     }
 }

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "hyperionmod:block/hyper_berry_bush_stage0"
+    },
+    "age=1": {
+      "model": "hyperionmod:block/hyper_berry_bush_stage1"
+    }
+  }
+}

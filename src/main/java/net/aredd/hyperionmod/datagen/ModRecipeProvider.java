@@ -16,6 +16,7 @@ import java.util.List;
 public class ModRecipeProvider extends FabricRecipeProvider {
     private static final List<ItemConvertible> HYPERIONITE_SMELTABLES = List.of(ModItems.RAW_HYPERIONITE,
             ModBlocks.HYPER_ORE);
+    private static final List<ItemConvertible> HYPERIONITE_TURNABLES = List.of(ModItems.HYPERIONITE_INGOT);
 
     public ModRecipeProvider(FabricDataOutput output) {
         super(output);
