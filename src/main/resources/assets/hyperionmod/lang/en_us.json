@@ -19,5 +19,8 @@
   "item.hyperionmod.hyperionite_helmet": "Hyperionite Helmet",
   "item.hyperionmod.hyperionite_chestplate": "Hyperionite Chestplate",
   "item.hyperionmod.hyperionite_leggings": "Hyperionite Leggings",
-  "item.hyperionmod.hyperionite_boots": "Hyperionite Boots"
+  "item.hyperionmod.hyperionite_boots": "Hyperionite Boots",
+
+  "entity.hyperionmod.hyperion_spirit": "Hyperion Spirit",
+  "item.hyperionmod.hyperion_spirit_spawn_egg": "Hyperion Spirit Spawn Egg"
 }

@@ -33,6 +33,8 @@ public class ModItemGroups {
 
                         entries.add(ModItems.HYPER_BERRY);
 
+                        entries.add(ModItems.HYPERION_SPIRIT_SPAWN_EGG);
+
                     }).build());
 
 

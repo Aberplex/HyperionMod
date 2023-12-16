@@ -2,6 +2,7 @@ package net.aredd.hyperionmod.item;
 
 import net.aredd.hyperionmod.HyperionMod;
 import net.aredd.hyperionmod.block.ModBlocks;
+import net.aredd.hyperionmod.entity.ModEntities;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -27,6 +28,9 @@ public class ModItems {
             new ShovelItem(ModToolMaterial.HYPERION_TOOLS, 7, -3.0f, new FabricItemSettings()));
     public static final Item HYPERIONITE_HOE = registerItem("hyperionite_hoe",
             new HoeItem(ModToolMaterial.HYPERION_TOOLS, 0, 0, new FabricItemSettings()));
+
+    public static final Item HYPERION_SPIRIT_SPAWN_EGG = registerItem("hyperion_spirit_spawn_egg",
+            new SpawnEggItem(ModEntities.HYPERION_SPIRIT, 0x59139c, 0x5b2966, new FabricItemSettings()));
 
     public static final Item HYPERIONITE_HELMET = registerItem("hyperionite_helmet",
             new ArmorItem(ModArmorMaterials.HYPERIONITE, ArmorItem.Type.HELMET, new FabricItemSettings()));
